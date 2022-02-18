@@ -3,7 +3,7 @@ WORKDIR /app
 COPY pom.xml .
 COPY . .
 
-RUN sudo mvn clean install
+RUN mvn clean install
 FROM maven:3.8.4-jdk-8
 
 ## Package stage#FROM openjdk:11-jre-slim
